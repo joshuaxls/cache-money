@@ -227,7 +227,6 @@ class MemcachedWrapper < ::Memcached
     server_by_key(key)
   end
 
-  alias :reset :quit
   alias :close :quit #nodoc
   alias :flush_all :flush
   alias :compare_and_swap :cas
